@@ -1,20 +1,24 @@
-<<<<<<< HEAD
-# 📘 Scraping LeMonde.fr - Test Technique
+# Scraping Le Monde
 
-Ce script PHP permet de récupérer les titres des articles de la page d’accueil du site [lemonde.fr](https://www.lemonde.fr) et de les sauvegarder dans un fichier JSON.
+Ce projet est un script PHP simple qui récupère les titres des articles du site [lemonde.fr](https://www.lemonde.fr) et les sauvegarde dans un fichier JSON.
 
-## 🧰 Prérequis
+---
 
-- PHP 7.4 ou supérieur installé
-- Accès à Internet
+## Fonctionnalités
 
-## ⚙️ Installation
+- Récupération des titres des articles via scraping.
+- Sauvegarde des titres dans `scraped_titles.json`.
+- Gestion robuste des erreurs (timeout, absence de structure HTML, erreurs réseau).
+- Journalisation des erreurs dans `errors.log` avec horodatage.
 
-Clonez ce dépôt ou copiez le fichier `scraper.php` dans un dossier local :
+---
 
-```bash
-git clone https://github.com/Ramanandafy/scraping-lemonde.git
-cd scraping-lemonde
-=======
-# scraping-lemonde
->>>>>>> a6cbcdfee2b197b7a81a8e333af89e83b70a81c0
+## Installation
+
+1. Clonez ce dépôt :
+   ```bash
+   git clone https://github.com/Ramanandafy/scraping-lemonde.git
+   cd scraping-lemonde
+
+Exécutez le script PHP en ligne de commande :
+php scraper.php
